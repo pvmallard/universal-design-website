@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Universal Design Website</title>
+        <link rel="stylesheet" href="css/accessible.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <a class="skip-link" href="#maincontent">Skip to main content</a>
+
+            <header>
+                <h1 id="my-heading">Universal Design Website</h1> 
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav">Home</a></li>
+                    <li><a href="semantics-design.html" id="wikiLink">Lab 2</a></li>
+                    <li><a href="semantics-forms.html">Lab 3</a></li>
+                    <li><a href="accessible-css.html">Lab 4</a></li>
+                </ul>
+            </nav>
+
+            <main id="maincontent">
+                <section id="top">
+                    <h2 id="itsame">Mallory Prescott's Home Page</h2>
+                    <h2 class="sr-only">Hi</h2>
+                    <p>I've got some assignments in the nav, otherwise here's me:</p>
+                </section>
+            </main>
+
+            <aside id="left">
+                <h2 class="sr-only">Icon here</h2>
+                <figure>
+                    <a href="https://mallardamania.itch.io/">
+                        <img src="img/mallardamania.jpg" alt="itch.io profile icon" class="icon-link-big" 
+                        style="border-radius: 50%; border: 5px white solid;">
+                    </a>
+                    <figcaption>itch.io Profile</figcaption>
+                </figure>
+            </aside>
+                
+            <aside id="right">
+                <h2>About Me</h2>
+                <p>
+                    My name is Mallory Prescott, I'm a super senior who is currently double majoring in Computer Science and Creative Technology and Design.
+                    I'm really interested in what this class has to offer. I know very little about actively making a website more accessible, so I'm eager to learn and improve. 
+                </p>
+                <p>
+                    I was raised in Colorado but not born here, though I still feel like a native. Sometimes so much that I forget I wasn't born here like my brothers. I've got two of them, brothers that is. One older and one younger, but each talented and brilliant in their own way. Though it's my younger brother and I that inherited absurd allergies that make living more difficult than it needs to be.
+                    So contrary to most, free food is not a motivator for me since I can't eat. Still I love to cook, so that helps. Pastas, curries, and stews tend to be my favorite, although I do actually prefer to bake. My sweet tooth is nefarious.
+                </p>
+                <p>
+                    Fun facts about me are I'm a vampire, missing some bones, and love ice cream. I love artists like Hozier, Chappell Roan, Mother Mother, and Tyler, The Creator, but boy does my music taste vary. I like to try to compose music.
+                    Mostly for games or game jams I participate it. I love to create, to code, to draw, and there is nothing more satisfying to me than something finally coming together. 
+                </p>
+            </aside>
+
+            <footer>
+                <p>designed by mal for everyone</p>
+                <address>mvprescott17@gmail.com</address>
+                <small>&copy; <time datetime="2024-11-08 10:00" style="display:inline">November 08, 2024</time></small>  
+            </footer>
+        </div>
+
+    </body>
+</html>
