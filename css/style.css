@@ -1,5 +1,8 @@
 /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Copse&family=Quicksand:wght@300..700&display=swap');
 /* colors */
+/* #DAFDBA #9AEBA3 #45C4B0 #13678A #012030 */
+
 
 *,
 *:before,
@@ -10,54 +13,76 @@
 }
 
 body {
-    background: white;
+    background: #012030;
     font-size: 20px;
-    color: black;
+    color: white;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+
+    transition: 0.2s;
+    animation: fadeIn 0.9s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1500px; */
     margin: 0 auto;
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 
-        1fr 1fr 1fr;
+        1fr 2fr;
     grid-template-areas:
-    "heady heady heady"
-    "navvy navvy navvy"
-    "aside1 mainy aside2"
-    "footy footy footy";
+    "heady heady"
+    "navvy navvy"
+    "suby suby"
+    "aside1 mainy"
+    "aside2 mainy"
+    "footy footy";
 }
 
-header{grid-area: heady;}
-nav{grid-area: navvy; background: gray;}
-main{grid-area: mainy; max-height: 100%}
-#aside1{grid-area: aside1;}
-#aside2{grid-area: aside2;}
-footer{grid-area: footy;}
+header{grid-area: heady; max-height: 100%}
+nav{grid-area: navvy; background: #13678A;}
+#subhead{grid-area: suby; background: #45C4B0;}
+#else{grid-area: mainy; max-height: 100%}
+#aside1{grid-area: aside1; background: #13678A;}
+#aside2{grid-area: aside2; background: #13678A;}
+footer{grid-area: footy; background: #45C4B0;}
 
-header, nav, main,
+header, nav, section,
 aside, footer {
     padding: 1.5em;
-    /* min-height: 100vh; */
 }
 
-
-header, footer {
+header, footer, #subhead, figure {
     text-align: center;
 }
 
+header {
+    height: 75vh;
+    overflow: hidden;
+}
 
 
 h1, h2, h3, h4 {
-    font-family: serif;
-    font-weight: normal;
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
     padding: .2em 0;
 }
 
 h1 {
     font-size: 3em;
+    /* padding: 0.8em;
+    position: absolute;
+    top: 8px;
+    left: 16px; */
 }
 
 h2 {
@@ -82,6 +107,13 @@ img {
     max-width: 100%;
 }
 
+#for-head{
+    opacity: 30%;
+    max-width: none;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+}
 
 
 nav ul {
@@ -109,6 +141,7 @@ nav ul li a {
         grid-template-areas: 
             "heady heady"
             "navvy navvy"
+            "suby suby"
             "aside1 mainy"
             "aside2 mainy"
             "footy footy";
@@ -121,11 +154,15 @@ nav ul li a {
             1fr;
         grid-template-areas: 
             "heady"
-            "aside1"
+            "suby"
             "mainy"
+            "aside1"
             "aside2"
             "navvy"
             "footy";
+    }
+    header{
+        height: 40vh;
     }
     nav ul {
         flex-flow: column nowrap;
@@ -135,7 +172,7 @@ nav ul li a {
         display: block;
         padding: 10px 5px;
         margin: 5px;
-        border: 1px black solid;
-        background: white;
+        border: 2px white solid;
+        background: #012030;
     }
 }
