@@ -48,13 +48,13 @@ body {
     "footy";
 }
 
-header{grid-area: heady; max-height: 100%}
-nav{grid-area: navvy; background: #13678A;}
-#subhead{grid-area: suby; background: #299ea2;}/* color: #012030;}*/
-#else{grid-area: mainy; max-height: 100%}
-#aside1{grid-area: aside1; background: #13678A;}
-#aside2{grid-area: aside2; background: #13678A;}
-footer{grid-area: footy; background: #299ea2;}/* color: #012030;}*/
+header{grid-area: heady;}
+nav{grid-area: navvy; background: #0a375a;}
+#subhead{grid-area: suby; background: #13678A;}/* color: #012030;}*/
+main{grid-area: mainy;}
+#aside1{grid-area: aside1; background: #0a375a;}
+#aside2{grid-area: aside2; background: #0a375a;}
+footer{grid-area: footy; background: #13678A;}/* color: #012030; #299ea2}*/
 
 header, nav, section,
 aside, footer {
@@ -65,13 +65,16 @@ header, footer, #subhead, figure {
     text-align: center;
 }
 
-aside {
-    padding-left: 1.2em;
-    padding-right: 1.2em;
+#aside1, #aside2 {
+    padding-left: 2em;
+    padding-right: 2em;
 }
-section {
-    padding-left: 1.2em;
-    padding-right: 1.2em;
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#subhead{
+    font-size: 1.2em;
 }
 
 
@@ -84,14 +87,10 @@ h1, h2, h3 {
 
 h1 {
     font-size: 3em;
-    /* padding: 0.8em;
-    position: absolute;
-    top: 8px;
-    left: 16px; */
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 h3 {
@@ -110,6 +109,16 @@ p {
 img {
     object-fit: contain;
     max-width: 100%;
+}
+
+.further a {
+    color:#ffffff;
+    transition: 0.1s;
+    margin: 1.8em 0;
+    line-height: 1.8em;
+}
+a:hover{
+    color:#9AEBA3;
 }
 
 #for-head{
@@ -138,6 +147,7 @@ nav ul li a {
     border: 2px white solid;
     background: #012030;
     transition: 0.1s;
+    margin: 1.3em 0;
 }
 nav ul li a:hover {
     color: #9AEBA3;
@@ -148,15 +158,14 @@ nav ul li a:hover {
 
 @media screen and (min-width: 501px) and (max-width: 1000px) {
     .container {
-        grid-template-columns:
-            1fr 1fr;
         grid-template-areas: 
-            "heady heady"
-            "navvy navvy"
-            "suby suby"
-            "aside1 mainy"
-            "aside2 mainy"
-            "footy footy";
+            "heady "
+            "navvy "
+            "suby "
+            "aside1 "
+            "mainy"
+            "aside2 "
+            "footy";
     }
 
     nav ul {
@@ -185,6 +194,15 @@ nav ul li a:hover {
             "aside1 mainy"
             "aside2 mainy"
             "footy footy";
+    }
+
+    #aside1, #aside2 {
+        padding-left: 3em;
+        padding-right: 1.5em;
+    }
+    section {
+        padding-left: 1.5em;
+        padding-right: 3em;
     }
 
     nav ul {
