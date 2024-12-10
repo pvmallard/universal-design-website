@@ -40,11 +40,11 @@ body {
         1fr;
     grid-template-areas:
     "heady"
+    "navvy"
     "suby"
     "aside1"
     "mainy"
     "aside2"
-    "navvy"
     "footy";
 }
 
@@ -56,9 +56,12 @@ main{grid-area: mainy;}
 #aside2{grid-area: aside2; background: #0a375a;}
 footer{grid-area: footy; background: #13678A;}/* color: #012030; #299ea2}*/
 
-header, nav, section,
+header, nav,
 aside, footer {
     padding: 1.5em;
+}
+section{
+    padding: 1.5em 0;
 }
 
 header, footer, #subhead, figure {
@@ -75,7 +78,7 @@ main {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Caprasimo", serif;
     font-weight: 400;
     font-style: normal;
@@ -108,6 +111,14 @@ img {
     max-width: 100%;
 }
 
+a {
+    color:#ffffff;
+    transition: 0.1s;
+}
+
+.further {
+    padding: 0 1.1em;
+}
 .further a {
     color:#ffffff;
     transition: 0.1s;

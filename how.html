@@ -37,46 +37,62 @@
             <main id="maincontent">
                 <section id="else">
                     <h2>Usability Heuristics</h2>
-                    <p>Typography 
+                    <p>Digital media should be functional, communicative, and accessible to as many people as possible.
+                        Universal design is the easiest way to ensure your digital media is just that, so here are some tips, tools, and rules of thumb to apply.
                     </p>
-                    <p>Links, Tabbed navigation
-                    </p>
-                    <p>Spelling errors
-                    </p>
-                    <p>W3C, WAI-ARIA, and WCAG should be used for code validation and to ensure one is following the best standards possible. This includes in HTML, CSS, and JavaScript.
-                    </p>
-                    <p>Browser/screen reader compatibility, Alt tag (all images with alt), 
-                    </p>
-                    <p>Layout - IA
-                    </p>
-
-                    <h2>Content Structure</h2>
-                    <p>Visibility and structure should be considered in page development. Child elements should describe their content, headers used in a reasonable fashion, and sections and divs used in a manner that it makes it clear what elements are part of which parent elements. Content should flow and be easy to navigate and understand.
-                    </p>
-
-                    <h2>Other</h2>
                     <section>
-                        <h3>Typography Legibility</h3>
-                        <p>Contrast, size, style, and font are some aspects of typography. In general, text should be readable, legible and easy to follow. Often serif fonts are used to headings, sans serif fonts for paragraphs and general text.
+                        <h2>Typography and Legibility</h2>
+                        <p>Size, style, and font are some of the most important aspects of typography. For text to be useful, especially for those with visual impairments, it must be legible. Text should be readable and easy to follow. Often serif fonts are used to headings, sans serif fonts for paragraphs and general text. Line height and spacing should be considered to make legibility easier as well.
+                        </p>
+                        <h3>Colors and Contrast</h3>
+                        <p>Color contrast and appeal are important in a website. Both in terms of readability and aesthetic, colors play a large part in digital media and design in general. As well as considering color blind individuals in development. Tools exist to aid in this, like color palette generators, contrast detectors, and color blind filters. 
+                        </p>
+                        <p>To ensure text is legible, contrast should always be high enough to actually see said text. 
+                            Vibrancy and color should be considered in text too. 
+                            Contrast checkers can be useful for text legibility, but odd color pairings should also be considered. 
+                            It's significantly more difficult to read vibrant red text against a dark orange background than it would be if the text was just a white or pale color.
                         </p>
                     </section>
                     <section>
-                        <h3>Colors</h3>
-                        <p>Color contrast and appeal are important in a website. Both in terms of readability and aesthetic, colors play a large part in digital media and design in general. As well as considering color blind individuals in development. Tools exist to aid in this, like color palette generators, contrast detectors, and color blind filters.
+                        <h2>Accessibility</h2>
+                        <p>W3C, WAI-ARIA, and WCAG should be used for code validation and to ensure one is following the best standards (for accessibility or otherwise) possible. W3C generally ensures accurate usage of HTML, CSS, and JavaScript, but WAI-ARIA and WCAG go further.</p>
+                        <h4>POUR: Guidelines from WCAG</h4>
+                        <p><strong>P - Perceivable:</strong> can it be seen. This includes alt text for non-text content, captions, text summaries (for videos etc), having structured content, and design for ease of viewing/listening (contrast, volume, etc).
                         </p>
+                        <p><strong>O - Operable:</strong> can it be used. This includes tab navigation, having enough time to read content/perform tasks, avoiding flashing lights or epilepsy triggers, and designing content for easy navigation.
+                        </p>
+                        <p><strong>U - Understandable:</strong> is it predictable. This includes writing easy-to-read text, predictable behavior, and allows for a margin of error. 
+                        </p>
+                        <p><strong>R - Robust</strong> is it as accessible as possible. This includes ensuring it is functional on as many different browsers and platforms as possible. 
+                        </p>
+                        <p>These are just some of the guidelines, however. Others that address areas like motion, animations, pointers, timeouts, non-text contrast, and more are still just as important.
+                            To go more in depth, You can see the full list of WCAG 2.2 Guidelines <a href="https://www.w3.org/TR/WCAG22/#toc">here</a>.
+                        </p>
+
+                        <h3>Screen Reader Compatibility and Alt Tags</h3>
+                        <p>As a general practice, using the correct HTML parent and child tags, having good structure, and utilizing aria-labels aids screen readers. Of course, a page should be made screen reader compatible in general, but it's aided by HTML elements, tags, and aria-labels. 
+                            Additionally, every image and non-text element should have alt text. Videos should have descriptions. Really, anything relevant that is communicated visually, must be communicated to screen readers as well.
+                        </p>
+                        <h3>Spelling and Other Errors</h3>
+                        <p>For the sake of screen readers and general readability, a page should be free of spelling errors. This is where testing and double checks can be assistive.</p>
+
                     </section>
+
                     <section>
+                        <h2>Content Structure</h2>
+                        <p>Visibility and structure should be considered in page development. Child elements should describe their content, headers used in a reasonable fashion, and sections and divs used in a manner that it makes it clear what elements are part of which parent elements. Content should flow and be easy to navigate and understand.
+                        </p>
+                        <p>
+                            HTML 5 has parent elements that aid in structure and content descriptions. These include header, nav, main, section, aside, and figure tags. The general format should usually follow the structure of header, nav, main, and footer. Section, figure (which should be used to parent any img child), and aside can be used intermittently, so long as they make sense in the context of the structure.
+                            Most of these parent elements have replaces their respective ARIA roles, but ARIA is still relevant and useful so long as it is used correctly. For example, some ARIA labels can be used to either show or hide content from screen readers. ARIA is also useful for forms, tables, and keyboard responsiveness
+                        </p>
+                        <p>Pages should be responsive, clear, and have a flow that is easy to follow and understand, only ever containing one h1 tag per page.
+                        </p>
                         <h3>Information architecture</h3>
                         <p>Information architecture is the idea of organizing content so people can find what they are looking for. 
-                            Layouts, navigation, and outlines are particularly important in these areas.
+                            Layouts, navigation, and outlines are particularly important in these areas. Much of it lies in the content structuring concepts mentioned before, but when there is a lot of content, one must use their intuition to organize and structure their pages.
                         </p>
                     </section>
-                    <section>
-                        <h3>W3C</h3>
-                        <p>Many of the topics on this page and on WHAT are linked to the standards from WAI-ARIA and WCAG 2. Referencing their pages is likely the most reliable way to ensure one is keeping up with the standards and guidelines that make for accessible digital media.
-                        </p>
-                    </section>
-                    
 
                 </section>
             </main>
@@ -87,24 +103,33 @@
                 <section>
                     <h3>Affordances</h3>
                     <p>A property in which the physical characteristics of an object or environment
-                        influences its function.</p>
+                        influences its function. Often this applies to whether the design communicates it's function. 
+                        For example, if a button looks like or behaves like a button it should be able to be pressed (hover css, general style css).
+                    </p>
                 </section>
                 <section>
                     <h3>Constraints</h3>
                     <p>Aspects of a design that limit the actions of users in order to prevent error and misuse
-                        of a device.</p>
+                        of a device. In digital media, this is often through disabling certain features or controlling/guiding the user's navigation.
+                    </p>
                 </section>
                 <section>
                     <h3>Visibility</h3>
-                    <p>Physical constraints are most effective when they are made visible to discourage an attempt at a wrong operation, but invisibility is also a factor. Visibility doesn't necessarily mean what can be 'seen' but what is communicated.</p>
+                    <p>Physical constraints are most effective when they are made visible to discourage an attempt at a wrong operation, but invisibility is also a factor. Visibility doesn't necessarily mean what can be 'seen' but what is communicated.
+                        This is especially important for screen readers and deciding what should or should not be communicated.
+                    </p>
                 </section>
                 <section>
                     <h3>Feedback</h3>
-                    <p>Aspects of a design the provide feedback, whether physically or otherwise, to communicate with the user.</p>
+                    <p>Aspects of a design the provide feedback, whether physically or otherwise, to communicate with the user.
+                        This could be anything from audio, visuals, animations, or other features that show the user the effects of what they did, like an element changing color when clicked or hovered over.
+                    </p>
                 </section>
                 <section>
                     <h3>Mapping</h3>
-                    <p>The idea that the design of something will resemble their effect or purpose.</p>
+                    <p>The idea that the design of something will resemble their effect or purpose.
+                        If one element controls or affects another, this should be clear in the way it's formatted. This is also relevant in terms of layout and structure.
+                    </p>
                 </section>
             </aside>
 
@@ -125,6 +150,16 @@
                         There are various accessibility checkers, color contrast detectors or palette creators, or outlining tools that can aid in universal design. 
                         Many are free and easy to use, some even offered as extensions like WAVE, lighthouse, etc.
                     </p>
+                    <section class="further">
+                        <h3 class="sr-only">Links to some accessibility tools</h3>
+                        <ul>
+                            <li><a href="https://wave.webaim.org/">Web Accessibility Evaluation Tool</a></li>
+                            <li><a href="https://validator.nu/">Nu HTML Checker</a></li>
+                            <li><a href="https://developer.chrome.com/docs/lighthouse/overview">Google Lighthouse</a></li>
+                            <li><a href="https://color.adobe.com/create/color-contrast-analyzer">Adobe Color: Accessibility and Color Palette Generator</a></li>
+                            <li><a href="https://www.nvaccess.org/download/">NVDA Screen Reader</a></li>
+                        </ul>
+                    </section>
                 </section>
                 
                 <section>
@@ -138,9 +173,9 @@
             
 
             <footer>
-                <p>designed by mal for everyone</p>
-                <address>mvprescott17@gmail.com</address>
-                <small>&copy; <time datetime="2024-12-03 10:00" style="display:inline">December 3, 2024</time></small> 
+                <p>designed by mal for everyone
+                <address>mvprescott17@gmail.com</address></p>
+                <p>&copy; <time datetime="2024-12-08 10:00" style="display:inline">December 8, 2024</time></p>  
             </footer>
         </div>
 
